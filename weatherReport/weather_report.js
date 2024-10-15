@@ -16,6 +16,11 @@ function showweatherDetails(event) {
         <p>Temperature: ${result.main.temp}</p>
         <p>Weather: ${result.weather[0].description}</p>`
     })
+    .catch(error => {
+        console.error('Error fetching weather:', error);
+        const weatherInfo = document.getElementById('weatherInfo');
+        weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
+      });
 }
 // set weather report event on form submit
 document.getElementById('weatherForm').addEventListener('submit', showweatherDetails)
