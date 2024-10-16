@@ -1,0 +1,55 @@
+{
+    "conditions": [
+        {
+            "name": "Thyroid",
+            "imagesrc": "https://teachmeanatomy.info/wp-content/uploads/Overview-of-the-Thryoid-Gland-768x1024.jpeg",
+            "symptoms": [
+                "Fatigue",
+                "Weight gain or loss",
+                "Dry skin",
+                "Muscle weakness",
+                "Irregular menstrual periods"
+            ],
+            "prevention": [
+                "Eat a balanced diet",
+                "Exercise regularly",
+                "Get regular check-ups"
+            ],
+            "treatment": "Medication like levothyroxine may be prescribed by a doctor."
+        },
+        {
+            "name": "Diabetes",
+            "imagesrc": "https://cdn.prod.website-files.com/5d9667bad4a41e222995e15b/63d30b2b0699f4f730a4f4b4_Msc%20diabetes%20copy.webp",
+            "symptoms": [
+                "Frequent urination",
+                "Increased thirst",
+                "Blurry vision",
+                "Fatigue",
+                "Slow healing of cuts or sores"
+            ],
+            "prevention": [
+                "Maintain a healthy weight",
+                "Follow a balanced diet",
+                "Regular exercise"
+            ],
+            "treatment": "Management includes medication, insulin therapy, and lifestyle changes."
+        },
+        {
+            "name": "High Blood Pressure",
+            "imagesrc": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaWhoLWhlYWx0aGNhcmUtYmVyaGFkXC9maWxlXC9jNURid0JTdVRlY1g3SGk0NzlIbi5qcGcifQ:ihh-healthcare-berhad:SvobNGKOVw2zs2BGmvpbUpcyGYN6JAzBJOUxC3L6hHU?format=webp",
+            "symptoms": [
+                "Headaches",
+                "Shortness of breath",
+                "Chest pain",
+                "Dizziness",
+                "Blurred or double vision"
+            ],
+            "prevention": [
+                "Reduce salt intake",
+                "Exercise regularly",
+                "Maintain a healthy weight"
+            ],
+            "treatment": "Medications like ACE inhibitors or diuretics may be prescribed."
+        }
+    ]
+}
