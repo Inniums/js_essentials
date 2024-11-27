@@ -1,187 +1,224 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navigation Bar Styling */
-  nav {
-    background-color: #008cba; /* Blue color for nav background */
-    color: white;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Navigation Title */
-  nav h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  /* Navigation Links */
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    transition: background-color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: #005f77; /* Darker shade on hover */
-    border-radius: 5px;
-  }
-  
-  nav ul li input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  nav ul li button {
-    background-color: white;
-    color: #008cba;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav ul li button:hover {
-    background-color: #005f77;
-    color: white;
-  }
-  
-  /* Container for Form and Results */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #008cba; /* Blue color for nav background */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation Title */
+nav h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navigation Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #005f77; /* Darker shade on hover */
+  border-radius: 5px;
+}
+
+nav ul li input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+nav ul li button {
+  background-color: white;
+  color: #008cba;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+  background-color: #005f77;
+  color: white;
+}
+
+/* Container for Form and Results */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+/* Analysis Form Styling */
+.analysisForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Occupies 60% of the width */
+}
+
+/* Form Heading */
+.analysisForm h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Elements */
+.analysisForm div {
+  margin-bottom: 15px;
+}
+
+.analysisForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.analysisForm input[type="text"],
+.analysisForm input[type="number"],
+.analysisForm select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.analysisForm input[type="radio"] {
+  margin-right: 5px;
+}
+
+.analysisForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.analysisForm button:hover {
+  background-color: #005f77;
+}
+
+/* Report Section */
+#report {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 100px;
+}
+
+/* Search Condition Styling */
+.searchCondition {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 35%; /* Occupies 35% of the width */
+}
+
+#result {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 100px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    gap: 20px;
+    flex-direction: column;
   }
-  
-  /* Analysis Form Styling */
-  .analysisForm {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%; /* Occupies 60% of the width */
-  }
-  
-  /* Form Heading */
-  .analysisForm h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Form Elements */
-  .analysisForm div {
-    margin-bottom: 15px;
-  }
-  
-  .analysisForm label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: bold;
-  }
-  
-  .analysisForm input[type="text"],
-  .analysisForm input[type="number"],
-  .analysisForm select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .analysisForm input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  .analysisForm button {
-    width: 100%;
-    padding: 12px;
-    background-color: #008cba;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .analysisForm button:hover {
-    background-color: #005f77;
-  }
-  
-  /* Report Section */
-  #report {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    min-height: 100px;
-  }
-  
-  /* Search Condition Styling */
+
+  .analysisForm,
   .searchCondition {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 35%; /* Occupies 35% of the width */
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
-  #result {
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    min-height: 100px;
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .analysisForm,
-    .searchCondition {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  
+}
+
+/* Container Styling */
+.image-container {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center the text (h1 and p) */
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  width: 100%;
+  overflow: hidden; /* Hide overflowing image parts */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Optional background for aesthetics */
+}
+
+/* Image Styling */
+.image-wrapper img {
+  max-width: 100%; /* Ensure the image fits within the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* No cropping, maintain aspect ratio */
+}
+
+/* Heading and Paragraph Styling */
+.image-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Optional color */
+}
+
+.image-container p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666; /* Optional color */
+}
